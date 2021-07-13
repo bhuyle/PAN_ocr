@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="row">
+    <div class="col-sm-4">
+        <form id="upload-file-ResNet50" method="post" enctype="multipart/form-data">
+            <label for="imageUploadResNet50" class="upload-label">
+               Upload image
+            </label>
+            <input type="file" name="file" id="imageUploadResNet50" accept=".png, .jpg, .jpeg">
+        </form>
+
+        <div class="image-section-ResNet50" style="display:none;">
+            <div class="img-preview">
+                <div id="imagePreviewResNet50">
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary btn-lg " id="btn-predict-ResNet50">Predict!</button>
+            </div>
+        </div>
+        <div class="loaderResNet50" style="display:none;"></div>
+    </div>  
+    <div class="col-sm-4">
+        <label for="imageUploadResNet50" class="upload-label">
+            ResNet50
+        </label>
+        <div><img id="resultResNet50" src="" style="width: 100%;"/></div>
+        <h4 id="text50">
+            <span> </span>
+        </h4>
+
+    </div>
+    <div class="col-sm-4">
+        <label for="imageUploadResNet50" class="upload-label">
+            ResNet18
+        </label>
+        <div><img id="resultResNet18" src="" style="width: 100%;"/></div>
+        <h4 id="text18">
+            <span> </span>
+        </h4>
+    </div>
+    
+</div>
+
+{% endblock %}
