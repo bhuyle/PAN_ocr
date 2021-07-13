@@ -10,3 +10,4 @@ python3 detector.py
 ```
 python3 main.py
 ```
+![](web.jpg)
